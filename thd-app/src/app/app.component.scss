@@ -1,0 +1,13 @@
+.main-content {
+    padding-top: 100px;
+}
+
+.header {
+    top: 0;
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    z-index: 999;
+}

@@ -1,0 +1,51 @@
+$accent-colour: #0072d0;
+$card-text-colour: #f8fcff;
+$margin-left-right: 10px;
+
+.home-image {
+    img {
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.intro-content {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+mat-card {
+    margin: 6%;
+    text-align: center;
+    background-color: $accent-colour;
+    color: $card-text-colour;
+}
+
+.mr-10 {
+    margin-right: $margin-left-right;
+}
+
+.ml-10 {
+    margin-left: $margin-left-right;
+}
+
+.spacing {
+    margin-bottom: 100px;
+}
+
+mat-icon {
+    font-size: 50px;
+    margin-top: 7px;
+}

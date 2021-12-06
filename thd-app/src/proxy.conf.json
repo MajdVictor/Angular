@@ -1,0 +1,10 @@
+{
+    "/api": {
+      "target": "https://thabella.th-deg.de",
+      "secure": true,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }

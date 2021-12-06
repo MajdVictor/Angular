@@ -1,0 +1,37 @@
+<!--Displaying image of DIT campus-->
+<div class="home-image" width="100%">
+    <img src="../../assets/images/FH-Deggendorf-Campus.jpeg" alt="" />
+</div>
+
+<!--Displaying Intro-->
+<div class="intro-content">
+    <h1>{{ "Study & Research at DIT" | translate }}.</h1>
+    <h2>{{ "Discover our Pioneering and Vibrant University" | translate }}</h2>
+</div>
+
+<!--Displaying 3 material cards to navigate to different locations in the app-->
+<div class="home-page-cards" fxLayout.xs="column" fxLayout="row wrap" fxLayoutGap="10px" ngClass.gt-xs="ml-10">
+
+
+    <mat-card routerLink="/navigation" fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
+        <mat-card-title>{{ "Navigate & Explore" | translate }} </mat-card-title>
+
+        <mat-icon>place</mat-icon>
+    </mat-card>
+
+    <mat-card routerLink="/rooms" fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
+        <mat-card-title>{{ "Rooms & Events" | translate }}</mat-card-title>
+        <mat-icon>meeting_room</mat-icon>
+
+    </mat-card>
+
+    <mat-card routerLink="/ditNews" fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
+        <mat-card-title>{{ "Latest News" | translate }}</mat-card-title>
+        <mat-icon>info</mat-icon>
+
+    </mat-card>
+<!--Extra spacing between footer and mat cards-->
+</div>
+<div class="spacing">
+
+</div>

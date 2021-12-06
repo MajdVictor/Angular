@@ -1,0 +1,17 @@
+mat-toolbar {
+    padding: 20px;
+    position: fixed;
+    min-height: 100px !important;
+    height: 100px !important;
+    z-index: 1;
+}
+
+mat-toolbar {
+    span {
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+    }
+}

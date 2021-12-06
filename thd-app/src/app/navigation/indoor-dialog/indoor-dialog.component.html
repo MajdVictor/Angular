@@ -1,0 +1,15 @@
+<!--Building name-->
+<h2 mat-dialog-title>{{data.buildingName}}</h2>
+<!--Building Information-->
+<mat-dialog-content>
+    {{data.buildingInfo}}
+    <br>
+    sample image
+    <p></p>
+    <img src="../../assets/navigation/{{data.indoorMapUrl}}" />
+
+</mat-dialog-content>
+<!--button to close the dialog-->
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close>{{ "Close" | translate }}</button>
+</mat-dialog-actions>

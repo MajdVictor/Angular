@@ -1,0 +1,21 @@
+:host {
+    display: block;
+    margin-top: 1rem;
+}
+
+mat-card,
+mat-expansion-panel {
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    word-wrap: break-word;
+}
+
+mat-form-field,
+textarea {
+    width: 100%;
+}
+
+.info-news {
+    text-align: center;
+}

@@ -1,0 +1,150 @@
+<mat-toolbar fxLayout="row" color="primary">
+  <!--DIT Logo-->
+  <span fxFlex><img src="../../assets/logo/DIT-Logo.png" /></span>
+  <!--Home button-->
+  <button mat-button [fxShow]="true" [fxShow.xs]="false" [fxShow.sm]="true" routerLink="/home">
+    <mat-icon class="mr">home</mat-icon>
+    {{ "Home" | translate }}
+  </button>
+
+  <!--News button-->
+  <button mat-button [fxShow]="true" [fxShow.xs]="false" [fxShow.sm]="false" routerLink="/ditNews">
+    <mat-icon class="mr">info</mat-icon>
+    {{ "News" | translate }}
+  </button>
+
+  <!--Rooms button-->
+  <button mat-button [fxShow]="true" [fxShow.xs]="false" [fxShow.sm]="true" routerLink="/rooms">
+    <mat-icon class="mr">meeting_room</mat-icon>
+    {{ "Rooms" | translate }}
+  </button>
+
+  <!--Navigation button-->
+  <button mat-button [fxShow]="true" [fxShow.xs]="false" [fxShow.sm]="false" routerLink="/navigation">
+    <mat-icon class="mr">directions_walk</mat-icon>
+    {{ "Navigate" | translate }}
+  </button>
+
+  <!--login button-->
+  <button *ngIf="!authService.loggedIn()" mat-button [fxShow]="false" [fxShow.xs]="false" [fxShow.sm]="false"
+    routerLink="/login">
+    <mat-icon class="mr">perm_identity</mat-icon>
+    {{ "Login" | translate }}
+  </button>
+
+  <!--signup button-->
+  <button *ngIf="!authService.loggedIn()" mat-button [fxShow]="true" [fxShow.xs]="false" [fxShow.sm]="true"
+    routerLink="/signup">
+    <mat-icon class="mr">login</mat-icon>
+    {{ "Signup" | translate }}
+  </button>
+
+  <!--Edit News button-->
+  <button *ngIf="authService.loggedIn()" mat-button [fxShow]="true" [fxShow.xs]="true" [fxShow.sm]="true"
+    routerLink="/news">
+    <mat-icon class="mr">edit</mat-icon>
+    {{ "Edit News" | translate }}
+  </button>
+
+  <!--Logout button-->
+  <button *ngIf="authService.loggedIn()" (click)="authService.logout()" mat-button [fxShow]="true" [fxShow.xs]="true"
+    [fxShow.sm]="true" routerLink="/logout">
+    <mat-icon class="mr">logout</mat-icon>
+    {{ "Logout" | translate }}
+  </button>
+
+  <!--Container for side menu-->
+  <ng-container>
+    <button mat-icon-button [matMenuTriggerFor]="dropMenu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #dropMenu="matMenu" color="primary">
+      <ng-container>
+        <div [fxShow]="false" [fxShow.sm]="false" [fxShow.xs]="true" routerLink="/home">
+          <button mat-menu-item>
+            <mat-icon class="mr">home</mat-icon>
+            {{ "Home" | translate }}
+          </button>
+          <mat-divider></mat-divider>
+        </div>
+      </ng-container>
+
+      <ng-container>
+        <div [fxShow]="false" [fxShow.sm]="true" [fxShow.xs]="true" routerLink="/ditNews">
+          <!--News button-->
+          <button mat-menu-item>
+            <mat-icon class="mr">info</mat-icon>
+            {{ "News" | translate }}
+          </button>
+          <mat-divider></mat-divider>
+        </div>
+      </ng-container>
+
+      <ng-container>
+        <div [fxShow]="false" [fxShow.sm]="false" [fxShow.xs]="true" routerLink="/rooms">
+          <!--rooms button-->
+          <button mat-menu-item>
+            <mat-icon class="mr">meeting_room</mat-icon>
+            {{ "Rooms" | translate }}
+          </button>
+          <mat-divider></mat-divider>
+        </div>
+      </ng-container>
+
+      <ng-container>
+        <div [fxShow]="false" [fxShow.sm]="true" [fxShow.xs]="true" routerLink="/navigation">
+          <!--Navigate button-->
+          <button mat-menu-item>
+            <mat-icon class="mr">directions_walk</mat-icon>
+            {{ "Navigate" | translate }}
+          </button>
+          <mat-divider></mat-divider>
+        </div>
+      </ng-container>
+
+      <ng-container *ngIf="!authService.loggedIn()">
+        <div [fxShow]="true" [fxShow.sm]="true" [fxShow.xs]="true" routerLink="/login">
+          <!--Login button-->
+          <button mat-menu-item>
+            <mat-icon class="mr">perm_identity</mat-icon>
+            {{ "Login" | translate }}
+          </button>
+          <mat-divider></mat-divider>
+        </div>
+      </ng-container>
+
+      <ng-container *ngIf="!authService.loggedIn()">
+        <div [fxShow]="false" [fxShow.sm]="false" [fxShow.xs]="true" routerLink="/signup">
+          <!--Signup button-->
+          <button mat-menu-item>
+            <mat-icon class="mr">login</mat-icon>
+            {{ "Signup" | translate }}
+          </button>
+          <mat-divider></mat-divider>
+        </div>
+      </ng-container>
+
+      <ng-container *ngIf="authService.loggedIn()">
+        <div [fxShow]="true" [fxShow.sm]="true" [fxShow.xs]="true" routerLink="/news">
+          <!--Edit News button-->
+          <button mat-menu-item>
+            <mat-icon class="mr">edit</mat-icon>
+            {{ "Edit News" | translate }}
+          </button>
+          <mat-divider></mat-divider>
+        </div>
+      </ng-container>
+
+      <ng-container *ngIf="authService.loggedIn()">
+        <div [fxShow]="true" [fxShow.sm]="true" [fxShow.xs]="true" routerLink="/logout">
+          <!--Logout button-->
+          <button (click)="authService.logout()" mat-menu-item>
+            <mat-icon class="mr">logout</mat-icon>
+            {{ "Logout" | translate }}
+          </button>
+          <mat-divider></mat-divider>
+        </div>
+      </ng-container>
+    </mat-menu>
+  </ng-container>
+</mat-toolbar>

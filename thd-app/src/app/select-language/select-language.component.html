@@ -1,0 +1,4 @@
+<!--languages buttons-->
+<button mat-button color="primary" #langSelect *ngFor="let lang of languages" (click)="changeLanguage(lang.value)">
+  {{ lang.viewValue }}
+</button>

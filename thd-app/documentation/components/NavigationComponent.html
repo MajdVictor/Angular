@@ -1,0 +1,1362 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>thd-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">thd-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>NavigationComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/navigation/navigation.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Navigation class </p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-navigation</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./navigation.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./navigation.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#buildingsList">buildingsList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialog">dialog</a>
+                            </li>
+                            <li>
+                                <a href="#fromBuilding">fromBuilding</a>
+                            </li>
+                            <li>
+                                <a href="#fromBuildingLatitude">fromBuildingLatitude</a>
+                            </li>
+                            <li>
+                                <a href="#fromBuildingLongitude">fromBuildingLongitude</a>
+                            </li>
+                            <li>
+                                <a href="#indoorBuildingMapUrl">indoorBuildingMapUrl</a>
+                            </li>
+                            <li>
+                                <a href="#indoorBuildingSelected">indoorBuildingSelected</a>
+                            </li>
+                            <li>
+                                <a href="#map">map</a>
+                            </li>
+                            <li>
+                                <a href="#navigationForm">navigationForm</a>
+                            </li>
+                            <li>
+                                <a href="#routeControl">routeControl</a>
+                            </li>
+                            <li>
+                                <a href="#selectedBuildingInformation">selectedBuildingInformation</a>
+                            </li>
+                            <li>
+                                <a href="#selectedIndoorBuildingName">selectedIndoorBuildingName</a>
+                            </li>
+                            <li>
+                                <a href="#toBuilding">toBuilding</a>
+                            </li>
+                            <li>
+                                <a href="#toBuildingLatitude">toBuildingLatitude</a>
+                            </li>
+                            <li>
+                                <a href="#toBuildingLongitude">toBuildingLongitude</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#findRoute">findRoute</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getBuildings">getBuildings</a>
+                            </li>
+                            <li>
+                                <a href="#indoorNavigation">indoorNavigation</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, dialog: MatDialog)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/app/navigation/navigation.component.ts:94</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor </p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>: used for getting json data from json file</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>: dialog for indor navigation</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findRoute"></a>
+                    <span class="name">
+                        <b>
+                            findRoute
+                        </b>
+                        <a href="#findRoute"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findRoute()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="144"
+                            class="link-to-prism">src/app/navigation/navigation.component.ts:144</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This function is called when Find Route button is clicked.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBuildings"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getBuildings
+                        </b>
+                        <a href="#getBuildings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getBuildings()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="120"
+                            class="link-to-prism">src/app/navigation/navigation.component.ts:120</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This functions returns json objects from buildings.json</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="indoorNavigation"></a>
+                    <span class="name">
+                        <b>
+                            indoorNavigation
+                        </b>
+                        <a href="#indoorNavigation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>indoorNavigation()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="188"
+                            class="link-to-prism">src/app/navigation/navigation.component.ts:188</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This function is called when Find Indoor map button is clicked</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="128"
+                            class="link-to-prism">src/app/navigation/navigation.component.ts:128</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Called after the constructor is executed.
+It creates a map object and set the view to deggendorf Institute of technology region</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="buildingsList"></a>
+                        <span class="name">
+                            <b>
+                            buildingsList</b>
+                            <a href="#buildingsList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/navigation/navigation.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>This list holds the buildings json objects retreived from buildings.json</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dialog"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            dialog</b>
+                            <a href="#dialog"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatDialog</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/app/navigation/navigation.component.ts:102</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">: dialog for indor navigation</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fromBuilding"></a>
+                        <span class="name">
+                            <b>
+                            fromBuilding</b>
+                            <a href="#fromBuilding"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/navigation/navigation.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>String variable to hold the source building&#39;s name selected from the drop down</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fromBuildingLatitude"></a>
+                        <span class="name">
+                            <b>
+                            fromBuildingLatitude</b>
+                            <a href="#fromBuildingLatitude"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/navigation/navigation.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>string variable to hold the latitude coordinate for the source building</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fromBuildingLongitude"></a>
+                        <span class="name">
+                            <b>
+                            fromBuildingLongitude</b>
+                            <a href="#fromBuildingLongitude"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/navigation/navigation.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>string variable to hold the longitute coordinate for the source building</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="indoorBuildingMapUrl"></a>
+                        <span class="name">
+                            <b>
+                            indoorBuildingMapUrl</b>
+                            <a href="#indoorBuildingMapUrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/navigation/navigation.component.ts:69</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>String variable to hold the url for indoor map for the selected building </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="indoorBuildingSelected"></a>
+                        <span class="name">
+                            <b>
+                            indoorBuildingSelected</b>
+                            <a href="#indoorBuildingSelected"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/navigation/navigation.component.ts:59</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>String variable to hold the name of the building selected from the drop down for indoor navigation</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="map"></a>
+                        <span class="name">
+                            <b>
+                            map</b>
+                            <a href="#map"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/app/navigation/navigation.component.ts:89</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>map object</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="navigationForm"></a>
+                        <span class="name">
+                            <b>
+                            navigationForm</b>
+                            <a href="#navigationForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new FormGroup({
+    fromBuilding: new FormControl(&#x27;&#x27;), // source
+    toBuilding: new FormControl(&#x27;&#x27;), // destination
+    indoorBuilding:new FormControl(&#x27;&#x27;),  //indoor
+    
+  })</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/app/navigation/navigation.component.ts:79</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Angular form for navigation with two controls </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="routeControl"></a>
+                        <span class="name">
+                            <b>
+                            routeControl</b>
+                            <a href="#routeControl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/app/navigation/navigation.component.ts:94</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Routing control object</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedBuildingInformation"></a>
+                        <span class="name">
+                            <b>
+                            selectedBuildingInformation</b>
+                            <a href="#selectedBuildingInformation"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/navigation/navigation.component.ts:64</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>String variable to hold the information for the selected building retrieved from the json file</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedIndoorBuildingName"></a>
+                        <span class="name">
+                            <b>
+                            selectedIndoorBuildingName</b>
+                            <a href="#selectedIndoorBuildingName"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/navigation/navigation.component.ts:74</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>String variable to hold the name of the building to be passed to the dialog</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="toBuilding"></a>
+                        <span class="name">
+                            <b>
+                            toBuilding</b>
+                            <a href="#toBuilding"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/navigation/navigation.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>String variable to hold the destination building&#39;s name selected from the drop down</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="toBuildingLatitude"></a>
+                        <span class="name">
+                            <b>
+                            toBuildingLatitude</b>
+                            <a href="#toBuildingLatitude"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/navigation/navigation.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>string variable to hold the latitude coordinate for the destination building</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="toBuildingLongitude"></a>
+                        <span class="name">
+                            <b>
+                            toBuildingLongitude</b>
+                            <a href="#toBuildingLongitude"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/navigation/navigation.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>string variable to hold the longitude coordinate for the destination building</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import * as L from &#x27;leaflet&#x27;;
+import &#x27;leaflet-routing-machine&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { FormGroup, FormControl} from &#x27;@angular/forms&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { IndoorDialogComponent } from &#x27;./indoor-dialog/indoor-dialog.component&#x27;;
+
+
+/**
+ * Navigation class 
+ */
+@Component({
+  selector: &#x27;app-navigation&#x27;,
+  templateUrl: &#x27;./navigation.component.html&#x27;,
+  styleUrls: [&#x27;./navigation.component.scss&#x27;],
+})
+export class NavigationComponent implements OnInit {
+  
+  /**
+   * This list holds the buildings json objects retreived from buildings.json
+   */
+  buildingsList &#x3D; []
+
+  /**
+   * String variable to hold the source building&#x27;s name selected from the drop down
+   */
+  fromBuilding:string
+
+  /**
+   * String variable to hold the destination building&#x27;s name selected from the drop down
+   */
+  toBuilding:string
+
+  /**
+   * string variable to hold the latitude coordinate for the source building
+   */
+  fromBuildingLatitude:string;
+
+  /**
+   * string variable to hold the longitute coordinate for the source building
+   */
+  fromBuildingLongitude:string;
+
+  /**
+   * string variable to hold the latitude coordinate for the destination building
+   */
+  toBuildingLatitude:string;
+
+  /**
+   * string variable to hold the longitude coordinate for the destination building
+   */
+  toBuildingLongitude:string;
+
+  /**
+   * String variable to hold the name of the building selected from the drop down for indoor navigation
+   */
+  indoorBuildingSelected:string;
+
+  /**
+   * String variable to hold the information for the selected building retrieved from the json file
+   */
+  selectedBuildingInformation:string;
+
+  /**
+   * String variable to hold the url for indoor map for the selected building 
+   */
+  indoorBuildingMapUrl:string;
+
+  /**
+   * String variable to hold the name of the building to be passed to the dialog
+   */
+  selectedIndoorBuildingName:string;
+
+  /**
+   * Angular form for navigation with two controls 
+   */
+  navigationForm: FormGroup &#x3D; new FormGroup({
+    fromBuilding: new FormControl(&#x27;&#x27;), // source
+    toBuilding: new FormControl(&#x27;&#x27;), // destination
+    indoorBuilding:new FormControl(&#x27;&#x27;),  //indoor
+    
+  })
+
+  /**
+   * map object
+   */
+  map:any;
+
+  /**
+   * Routing control object
+   */
+  routeControl:any;
+
+
+  /**
+   * Constructor 
+   * @param http : used for getting json data from json file
+   * @param dialog : dialog for indor navigation
+   */
+  constructor(private http: HttpClient, public dialog: MatDialog) {
+
+    /**
+     * push json objects retrieved from getBuildings function to buildingsList
+     */
+    this.getBuildings().subscribe(data &#x3D;&gt; {
+
+      for(let i&#x3D;0; i&lt;data.buildings.length; i++){
+        this.buildingsList.push(data.buildings[i])
+      }
+  });
+  
+
+  }
+
+  /**
+   * This functions returns json objects from buildings.json
+   */
+ public getBuildings(): Observable&lt;any&gt; {
+        return this.http.get(&quot;../../assets/navigation/buildings.json&quot;);
+    }
+
+    /**
+     * Called after the constructor is executed.
+     * It creates a map object and set the view to deggendorf Institute of technology region
+     */
+  ngOnInit() {
+   
+    this.map &#x3D; L.map(&#x27;map&#x27;).setView([48.829487,12.9543166], 17);
+
+		L.tileLayer(&#x27;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#x27;, {
+      maxZoom:19,
+			attribution: &#x27;&amp;copy; &lt;a href&#x3D;&quot;https://www.openstreetmap.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#x27;
+		}).addTo(this.map);
+
+    
+  }
+
+  /**
+   * This function is called when Find Route button is clicked.
+   * 
+   */
+  findRoute(){
+
+    //clear previous routes if exist on the map
+    if(this.routeControl !&#x3D;&#x3D; undefined){
+      this.map.removeControl(this.routeControl)
+    }
+
+    //iterating though buildingsList and assign coordinates of the selected building name
+    for(let i&#x3D;0; i&lt;this.buildingsList.length; i++){
+      if(this.buildingsList[i].name &#x3D;&#x3D; this.fromBuilding){
+        this.fromBuildingLatitude &#x3D; this.buildingsList[i].latitude
+        this.fromBuildingLongitude &#x3D; this.buildingsList[i].longitude
+      }
+      if(this.buildingsList[i].name &#x3D;&#x3D; this.toBuilding){
+        this.toBuildingLatitude &#x3D; this.buildingsList[i].latitude
+        this.toBuildingLongitude &#x3D; this.buildingsList[i].longitude
+      }
+    }
+
+    //creating new routing control to show the route between the selected buildings
+    this.routeControl &#x3D; L.Routing.control({
+
+        router: L.Routing.osrmv1({
+            serviceUrl: &#x60;http://router.project-osrm.org/route/v1/&#x60;  // External service for routing 
+        }),
+        showAlternatives: false,
+        lineOptions: {styles: [{color: &#x27;#ed6852&#x27;, weight: 7}]}, // setting line thickness and color
+        fitSelectedRoutes: true,
+        altLineOptions: {styles: [{color: &#x27;#ed6852&#x27;, weight: 7}]},
+        show: true,
+        routeWhileDragging: false,
+        addWaypoints: false, // disable adding waypoints on the line
+        waypoints : // coordinates for source and destination buildings
+        [
+            L.latLng(this.fromBuildingLatitude, this.fromBuildingLongitude),
+            L.latLng(this.toBuildingLatitude, this.toBuildingLongitude)
+        ],
+    })
+    this.routeControl.addTo(this.map); //adding the routing control to the map object 
+  }
+
+  /**
+   * This function is called when Find Indoor map button is clicked
+   */
+  indoorNavigation(){
+    //iterating through buildingsList to find information for the selected building
+    for(let i&#x3D;0; i&lt;this.buildingsList.length; i++){
+      if(this.buildingsList[i].name &#x3D;&#x3D; this.indoorBuildingSelected){
+        this.selectedBuildingInformation &#x3D; this.buildingsList[i].indoorInfo
+        this.indoorBuildingMapUrl &#x3D; this.buildingsList[i].indoorMap
+        this.selectedIndoorBuildingName &#x3D; this.buildingsList[i].name
+      }
+    }
+    //Passing data (building name, building information, url for indoor map ) to IndoorDialog 
+    this.dialog.open(IndoorDialogComponent,{ data: { &quot;buildingInfo&quot;:this.selectedBuildingInformation,
+    &quot;indoorMapUrl&quot;:this.indoorBuildingMapUrl,
+    &quot;buildingName&quot;:this.selectedIndoorBuildingName}});
+
+    
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https://unpkg.com/leaflet@1.2.0/dist/leaflet.css&quot; /&gt;
+&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css&quot; /&gt;
+&lt;script src&#x3D;&quot;https://unpkg.com/leaflet@1.2.0/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+&lt;script src&#x3D;&quot;https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js&quot;&gt;&lt;/script&gt;
+
+&lt;form [formGroup]&#x3D;&quot;navigationForm&quot; class&#x3D;&quot;normal-form&quot;&gt;
+    &lt;div class&#x3D;&quot;buildings-form&quot; fxLayout&#x3D;&quot;row&quot; fxLayout.xs&#x3D;&quot;column&quot; fxLayoutGap&#x3D;&quot;20px&quot; fxLayoutAlign&#x3D;&quot;center&quot;&gt;
+        &lt;mat-form-field&gt;
+            &lt;mat-select placeholder&#x3D;&quot;{{ &#x27;FROM&#x27; | translate }}&quot; [(ngModel)]&#x3D;&quot;fromBuilding&quot; formControlName&#x3D;&quot;fromBuilding&quot; name&#x3D;&quot;fromBuilding&quot;&gt;
+                &lt;mat-option *ngFor&#x3D;&quot;let building of buildingsList&quot; [value]&#x3D;&quot;building.name&quot;&gt;{{ building.name }}&lt;/mat-option&gt;
+            &lt;/mat-select&gt;
+        &lt;/mat-form-field&gt;
+
+        &lt;mat-form-field&gt;
+            &lt;mat-select placeholder&#x3D;&quot;{{ &#x27;TO&#x27; | translate }}&quot; [(ngModel)]&#x3D;&quot;toBuilding&quot; formControlName&#x3D;&quot;toBuilding&quot; name&#x3D;&quot;toBuilding&quot;&gt;
+                &lt;mat-option *ngFor&#x3D;&quot;let building of buildingsList&quot; [value]&#x3D;&quot;building.name&quot;&gt;{{ building.name }}&lt;/mat-option&gt;
+            &lt;/mat-select&gt;
+        &lt;/mat-form-field&gt;
+
+        &lt;button class&#x3D;&quot;find-button&quot; mat-raised-button color&#x3D;&quot;accent&quot; type&#x3D;&quot;submit&quot; (click)&#x3D;&quot;findRoute()&quot; [disabled]&#x3D;&quot;!toBuilding || !fromBuilding&quot;&gt;
+      
+            {{ &quot;Find Route&quot; | translate}}      
+    &lt;/button&gt;
+
+        &lt;span&gt;&lt;/span&gt;
+        &lt;mat-form-field&gt;
+            &lt;mat-select placeholder&#x3D;&quot;{{ &#x27;Select building&#x27; | translate }}&quot; [(ngModel)]&#x3D;&quot;indoorBuildingSelected&quot; formControlName&#x3D;&quot;indoorBuilding&quot; name&#x3D;&quot;indoorBuildingSelected&quot;&gt;
+                &lt;mat-option *ngFor&#x3D;&quot;let building of buildingsList&quot; [value]&#x3D;&quot;building.name&quot;&gt;{{ building.name }}&lt;/mat-option&gt;
+            &lt;/mat-select&gt;
+
+        &lt;/mat-form-field&gt;
+
+        &lt;button class&#x3D;&quot;find-button&quot; mat-raised-button color&#x3D;&quot;accent&quot; type&#x3D;&quot;submit&quot; (click)&#x3D;&quot;indoorNavigation()&quot; [disabled]&#x3D;&quot;!indoorBuildingSelected&quot;&gt;
+            {{ &quot;Find Indoor Map&quot; | translate}}
+    &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+
+&lt;div id&#x3D;&quot;map&quot;&gt;&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./navigation.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">#map{
+	height: 600px;
+    width:100%;
+    margin-bottom: 50px;
+    z-index: 0;
+    
+}
+
+mat-form-field {
+    align-items: center;
+    
+    
+  }
+  
+.find-button {
+text-align: center;
+margin: 10px;
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" /><link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" /><script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script><script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script><form [formGroup]="navigationForm" class="normal-form">    <div class="buildings-form" fxLayout="row" fxLayout.xs="column" fxLayoutGap="20px" fxLayoutAlign="center">        <mat-form-field>            <mat-select placeholder="{{ \'FROM\' | translate }}" [(ngModel)]="fromBuilding" formControlName="fromBuilding" name="fromBuilding">                <mat-option *ngFor="let building of buildingsList" [value]="building.name">{{ building.name }}</mat-option>            </mat-select>        </mat-form-field>        <mat-form-field>            <mat-select placeholder="{{ \'TO\' | translate }}" [(ngModel)]="toBuilding" formControlName="toBuilding" name="toBuilding">                <mat-option *ngFor="let building of buildingsList" [value]="building.name">{{ building.name }}</mat-option>            </mat-select>        </mat-form-field>        <button class="find-button" mat-raised-button color="accent" type="submit" (click)="findRoute()" [disabled]="!toBuilding || !fromBuilding">                  {{ "Find Route" | translate}}          </button>        <span></span>        <mat-form-field>            <mat-select placeholder="{{ \'Select building\' | translate }}" [(ngModel)]="indoorBuildingSelected" formControlName="indoorBuilding" name="indoorBuildingSelected">                <mat-option *ngFor="let building of buildingsList" [value]="building.name">{{ building.name }}</mat-option>            </mat-select>        </mat-form-field>        <button class="find-button" mat-raised-button color="accent" type="submit" (click)="indoorNavigation()" [disabled]="!indoorBuildingSelected">            {{ "Find Indoor Map" | translate}}    </button>    </div></form><div id="map"></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ArticleDialogComponent', 'selector': 'app-article-dialog'},{'name': 'EditNewsComponent', 'selector': 'app-edit-news'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'IndoorDialogComponent', 'selector': 'app-indoor-dialog'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NavigationComponent', 'selector': 'app-navigation'},{'name': 'NewsComponent', 'selector': 'app-news'},{'name': 'RoomsComponent', 'selector': 'app-rooms'},{'name': 'SelectLanguageComponent', 'selector': 'app-select-language'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'UpdateNewsComponent', 'selector': 'app-update-news'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'NavigationComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'NavigationComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

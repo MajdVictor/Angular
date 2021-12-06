@@ -1,0 +1,45 @@
+<mat-card>
+  <form [formGroup]="signUpForm">
+    <mat-form-field>
+      <!--first name input-->
+      <input [(ngModel)]="userData.firstName" name="firstName" formControlName="firstName" matInput
+        placeholder="{{ 'First Name' | translate }}" />
+      <mat-error>{{ "This field is mandatory" | translate }}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <!--last name input-->
+      <input [(ngModel)]="userData.lastName" name="lastName" formControlName="lastName" matInput
+        placeholder="{{ 'Last Name' | translate }}" />
+      <mat-error>{{ "This field is mandatory" | translate }}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <!--username input-->
+      <input [(ngModel)]="userData.username" name="username" formControlName="username" matInput
+        placeholder="{{ 'Username' | translate }}" />
+      <mat-error>{{ "This field is mandatory" | translate }}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <!--email input-->
+      <input [(ngModel)]="userData.email" name="email" formControlName="email" matInput
+        placeholder="{{ 'Email' | translate }}" />
+      <mat-error *ngIf="signUpForm.controls['email'].errors?.required">{{ "This field is mandatory" | translate }}</mat-error>
+      <mat-error *ngIf="signUpForm.controls['email'].errors?.email">{{ "Invalid email" | translate }}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <!--password input-->
+      <input [(ngModel)]="userData.password" type="password" name="password" formControlName="password" matInput
+        placeholder="{{ 'Password' | translate }}" />
+    </mat-form-field>
+
+    <!--register button-->
+    <button (click)="addUser()" mat-raised-button color="accent" type="submit" [disabled]="signUpForm.invalid">
+      {{ "Signup" | translate }}
+    </button>
+  </form>
+  <br />
+  <div *ngIf="showSuccessMessage">{{ "saved successfully" | translate }}</div>
+
+  <div *ngIf="serverErrorMessages">
+    {{ serverErrorMessages }}
+  </div>
+</mat-card>

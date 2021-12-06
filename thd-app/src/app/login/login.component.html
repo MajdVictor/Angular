@@ -1,0 +1,32 @@
+<mat-card>
+    <!--login form-->
+    <form [formGroup]="loginForm" class="normal-form">
+        <mat-form-field>
+            <!--Input field for email-->
+            <input [(ngModel)]="userData.email" name="email" formControlName="email" matInput placeholder="{{ 'Email' | translate }}" />
+            <mat-error *ngIf="loginForm.controls['email'].errors?.required"> {{ "This field is mandatory" | translate }} </mat-error>
+            <mat-error *ngIf="loginForm.controls['email'].errors?.email">{{ "Invalid email" | translate }}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <!--Input field password-->
+            <input [(ngModel)]="userData.password" type="password" name="password" formControlName="password" matInput placeholder="{{ 'Password' | translate }}" />
+            <mat-error *ngIf="loginForm.controls['password'].errors?.required"> {{ "This field is mandatory" | translate }} </mat-error>
+        </mat-form-field>
+
+
+        <!--Login button-->
+        <button (click)="loginUser()" mat-raised-button color="accent" type="submit" [disabled]="loginForm.invalid">
+      {{ "Login" | translate}}
+    </button>
+
+    
+    </form>
+    
+
+    <br />
+    <!--Displaying Error messages from the server-->
+    <div *ngIf="serverErrorMessages">
+        {{ serverErrorMessages }}
+    </div>
+    <a href="/signup">{{ "Don't have an account? Register here" | translate }}</a> 
+</mat-card>

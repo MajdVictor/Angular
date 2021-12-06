@@ -1,0 +1,46 @@
+<!--using leaflet packages for routing -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+<!--form to select source and destination buildings , and indoor building-->
+<form [formGroup]="navigationForm" class="normal-form">
+    <div class="buildings-form" fxLayout="row" fxLayout.xs="column" fxLayoutGap="20px" fxLayoutAlign="center">
+        <!--drop down menu with all buildings (source)-->
+        <mat-form-field>
+            <mat-select placeholder="{{ 'FROM' | translate }}" [(ngModel)]="fromBuilding" formControlName="fromBuilding" name="fromBuilding">
+                <mat-option *ngFor="let building of buildingsList" [value]="building.name">{{ building.name }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <!--drop down menu with all buildings ( Destination )-->
+        <mat-form-field>
+            <mat-select placeholder="{{ 'TO' | translate }}" [(ngModel)]="toBuilding" formControlName="toBuilding" name="toBuilding">
+                <mat-option *ngFor="let building of buildingsList" [value]="building.name">{{ building.name }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <!--Find route button-->
+        <button class="find-button" mat-raised-button color="accent" type="submit" (click)="findRoute()" [disabled]="!toBuilding || !fromBuilding">
+      
+            {{ "Find Route" | translate }}      
+    </button>
+
+        <span></span>
+        <!--drop down menu with all buildings ( Indoor )-->
+        <mat-form-field>
+            <mat-select placeholder="{{ 'Select building' | translate }}" [(ngModel)]="indoorBuildingSelected" formControlName="indoorBuilding" name="indoorBuildingSelected">
+                <mat-option *ngFor="let building of buildingsList" [value]="building.name">{{ building.name }}</mat-option>
+            </mat-select>
+
+        </mat-form-field>
+
+        <!--Find Indoor Map button-->
+        <button class="find-button" mat-raised-button color="accent" type="submit" (click)="indoorNavigation()" [disabled]="!indoorBuildingSelected">
+            {{ "Find Indoor Map" | translate }}
+    </button>
+    </div>
+</form>
+
+<div id="map"></div>

@@ -1,0 +1,26 @@
+<mat-card>
+  <!--Form to edit news-->
+  <form [formGroup]="editNewsForm">
+    <mat-form-field>
+      <!--Input field for news title-->
+      <input matInput type="text" [(ngModel)]="enteredTitle" formControlName="title"
+        placeholder="{{ 'Title' | translate }}" />
+      <mat-error *ngIf="editNewsForm.controls['title'].errors?.required">{{ "This field is mandatory" | translate }}
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <!--Input field for news content-->
+      <textarea matInput rows="6" [(ngModel)]="enteredContent" formControlName="content"
+        placeholder="{{ 'Content' | translate }}"></textarea>
+      <mat-error *ngIf="editNewsForm.controls['content'].errors?.required">{{ "This field is mandatory" | translate }}
+      </mat-error>
+    </mat-form-field>
+    <!--button to update news-->
+    <button mat-raised-button color="primary" (click)="updateSignleNews()" [disabled]="editNewsForm.invalid"
+      type="submit">
+      {{ "UPDATE" | translate }}
+    </button>
+  </form>
+</mat-card>
+<br />
+<br />

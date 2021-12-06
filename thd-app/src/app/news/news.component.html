@@ -1,0 +1,24 @@
+<!--seach box-->
+<mat-form-field>
+  <input class="search-input" matInput placeholder="{{ 'Search news' | translate }}" [(ngModel)]="newsTitleSearch"
+    (input)="searchArticle()" />
+</mat-form-field>
+
+<br>
+<br>
+
+<!--displaying news as mat-cards-->
+<div fxLayout.xs="column" fxLayout="row wrap" fxLayoutGap="10px" ngClass.gt-xs="ml-10">
+  <mat-card *ngFor="let newsArticle of newsList" fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)"
+    fxFlex.gt-md="0 1 calc(25%-10px)">
+    <mat-card-title>{{newsArticle.title}}</mat-card-title>
+    <img mat-card-image src="../../assets/images/newsImageColor.png" width="322" height="322" class="image">
+    
+    <mat-card-actions>
+      <button mat-button color="primary"
+        (click)="readArticle(newsArticle.content , newsArticle.title)">{{ "Read more" | translate }}</button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>
+<p *ngIf="newsList.length == 0" class="no-news">{{ "No News available" | translate }}</p>

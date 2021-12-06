@@ -1,0 +1,17 @@
+$primary: #173c6b;
+
+mat-card {
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+mat-form-field,
+textarea {
+    width: 100%;
+}
+
+a{
+  color: $primary;
+}

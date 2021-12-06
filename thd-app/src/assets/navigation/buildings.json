@@ -1,0 +1,83 @@
+{
+
+    "buildings":[
+
+    {"name":"BUILDING A",
+     "latitude":48.830402,
+     "longitude": 12.954193,
+     "indoorInfo": "More information can be added here",
+     "indoorMap": "../../assets/navigation/buildingA_indoor_sample.jpg"
+
+    },
+    {
+     "name":"BUILDING B",
+     "latitude":48.830183,
+     "longitude": 12.954848,
+     "indoorInfo": "More information can be added here",
+     "indoorMap": "../../assets/navigation/buildingA_indoor_sample.jpg"
+
+    },
+    {"name":"BUILDING C",
+    "latitude":48.829879,
+    "longitude": 12.955707,
+    "indoorInfo": "More information can be added here",
+    "indoorMap": "../../assets/navigation/buildingA_indoor_sample.jpg"
+
+    },
+
+    {"name":"BUILDING D",
+    "latitude": 48.829809,
+    "longitude": 12.954322,
+    "indoorInfo": "More information can be added here",
+    "indoorMap": "../../assets/navigation/buildingA_indoor_sample.jpg"
+
+    },
+    {"name":"BUILDING E",
+    "latitude": 48.829339,
+    "longitude": 12.955696,
+    "indoorInfo": "More information can be added here",
+    "indoorMap": "../../assets/navigation/buildingA_indoor_sample.jpg"
+
+    },
+
+    {"name":"BUILDING H",
+    "latitude":48.829515,
+    "longitude": 12.954124,
+    "indoorInfo": "More information can be added here",
+    "indoorMap": "../../assets/navigation/buildingA_indoor_sample.jpg"
+
+    },
+    {"name":"BUILDING I",
+    "latitude": 48.829229,
+    "longitude": 12.954950,
+    "indoorInfo": "More information can be added here",
+    "indoorMap": "../../assets/navigation/buildingA_indoor_sample.jpg"
+
+    },
+
+    {"name":"BUILDING J",
+    "latitude": 48.829487,
+    "longitude": 12.953501,
+    "indoorInfo": "More information can be added here",
+    "indoorMap": "../../assets/navigation/buildingA_indoor_sample.jpg"
+
+    },
+    {"name":"BUILDING K",
+    "latitude": 48.829198,
+    "longitude": 12.954306,
+    "indoorInfo": "More information can be added here",
+    "indoorMap": "../../assets/navigation/buildingA_indoor_sample.jpg"
+
+    },
+
+    {"name":"BUILDING L",
+    "latitude":48.828767,
+    "longitude": 12.955476,
+    "indoorInfo": "More information can be added here",
+    "indoorMap": "../../assets/navigation/buildingA_indoor_sample.jpg"
+
+    }
+
+]
+}
+

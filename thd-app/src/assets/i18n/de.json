@@ -1,0 +1,57 @@
+{  
+     
+       "Home": "Start",
+       "News": "Nachrichten",
+       "Events": "Veranstaltungen",
+       "Navigate": "Schifffahrt",
+       "Signup": "Registrieren",
+       "Login": "Einloggen",
+       "Logout" : "Ausloggen",
+       "Rooms": "Räume",
+       "Edit News": "Nachrichten bearbeiten",
+       "Email": "E-Mail",
+       "Password": "Passwort",
+       "First Name": "Vorname",
+       "Last Name": "Nachname",
+       "Username": "Nutzername",
+       "Title": "Titel",
+       "Content": "Inhalt",
+       "Save News": "Nachrichten speichern",
+       "EDIT": "BEARBEITEN",
+       "DELETE": "Löschen",
+       "UPDATE": "AKTUALISIEREN",
+       "This field is mandatory" : "Dieses Feld ist obligatorisch",
+       "No News available" : "Nicht verfügbar",
+       "Invalid email":"Ungültige E-Mail",
+       "saved successfully":"Erfolgreich gespeichert",
+
+       "Select Room":"Zimmer auswählen",
+       "Choose a date":"wähle ein Datum",
+       "Select Time":"Wählen Sie Zeit",
+       "Event Id":"Ereignis-ID",
+       "Description" : "Beschreibung", 
+       "Organizer":"Veranstalterin",
+       "Participants":"Teilnehmer",
+       "Find":"finden",
+
+       "Search news":"Nachrichten suchen",
+
+       "FROM": "VON",
+       "TO" : "NACH",
+       "Find Route":"Route Finden",
+       "Find Indoor Map":"Indoor-Karte finden",
+       "Select building":"Gebäude auswählen",
+       "Close":"schließen",
+       "Read more": "Weiterlesen",
+
+       "Study & Research at DIT":"Studieren & Forschen an der THD.",
+       "Discover our Pioneering and Vibrant University":"Innovativ und lebendig. Entdecke deine Hochschule.",
+       "Navigate & Explore":"Navigieren & Erkunden",
+       "Rooms & Events":"Räume & Veranstaltungen",
+       "Latest News":"Neuesten Nachrichten",
+
+       "No Events in this particular room!":"Keine Veranstaltungen in diesem Raum!",
+       "Don't have an account? Register here":"Sie haben noch kein Konto? Registrieren Sie sich hier"
+       
+
+}

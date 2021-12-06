@@ -1,0 +1,12 @@
+<!--displaying Article title-->
+<h2 mat-dialog-title>{{data.articleTitle}}</h2>
+
+<!--displaying article content-->
+<mat-dialog-content>
+    {{data.articleContent}}
+</mat-dialog-content>
+
+<!--close button to close the dialog-->
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close>{{ "Close" | translate }}</button>
+</mat-dialog-actions>

@@ -1,0 +1,58 @@
+{  
+     
+    "Home": "Home",
+    "News": "News",
+    "Events": "Events",
+    "Navigate": "Navigate",
+    "Signup": "Sign Up",
+    "Login": "Login",
+    "Logout" : "Logout",
+    "Rooms": "Rooms",
+    "Edit News": "Edit News",
+    "Email": "Email",
+    "Password": "Password",
+    "First Name": "First Name",
+    "Last Name": "Last Name",
+    "Username": "Username",
+    "Title": "Title",
+    "Content": "Content",
+    "Save News": "Save News",
+    "EDIT": "EDIT",
+    "DELETE": "DELETE",
+    "UPDATE": "UPDATE",
+    "This field is mandatory" : "This field is mandatory",
+    "No News available" : "No News available",
+    "Invalid email":"Invalid email",
+    "saved successfully":"saved successfully",
+
+    "Select Room":"Select Room",
+    "Choose a date":"Choose a date",
+    "Select Time":"Select Time",
+    "Event Id":"Event Id",
+    "Description" : "Description", 
+    "Organizer":"Organizer",
+    "Participants":"Participants",
+    "Find":"Find",
+
+    "Search news":"Search news",
+
+    "FROM": "FROM",
+    "TO" : "TO",
+    "Find Route":"Find Route",
+    "Find Indoor Map":"Find Indoor Map",
+    "Select building":"Select building",
+    "Close":"Close",
+    "Read more": "Read more",
+    "Study & Research at DIT":"Study & Research at DIT",
+    "Discover our Pioneering and Vibrant University":"Discover our Pioneering and Vibrant University",
+    "Navigate & Explore":"Navigate & Explore",
+    "Rooms & Events":"Rooms & Events",
+    "Latest News":"Latest News",
+    "No Events in this particular room!":"No Events in this particular room!",
+    "Don't have an account? Register here":"Don't have an account? Register here"
+
+
+
+   
+
+}
